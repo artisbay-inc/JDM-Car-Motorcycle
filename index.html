@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Motors USA — Premium Classic & Import Vehicles</title>
+  <meta name="description" content="Hand-picked classic and import vehicles. Fully inspected, reconditioned, and ready to drive. Nationwide shipping available." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <a href="#" class="logo">Apex<span>Motors</span></a>
+    <nav>
+      <a href="#inventory">Inventory</a>
+      <a href="#why">Why Us</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact" class="nav-cta">Get in Touch</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Est. 2018 &nbsp;·&nbsp; Richmond, VA</div>
+      <h1>Drive the<br/><em>Legendary.</em></h1>
+      <p>Hand-picked classics and imports, fully inspected and reconditioned. Every vehicle tells a story — we make sure it's one worth owning.</p>
+      <div class="hero-actions">
+        <a href="#inventory" class="btn-primary">Browse Inventory</a>
+        <a href="#contact" class="btn-outline">Talk to an Expert</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <h3 data-target="1200" data-suffix="+">0</h3>
+          <p>Vehicles Sold</p>
+        </div>
+        <div class="stat-item">
+          <h3 data-target="7" data-suffix=" Yrs">0</h3>
+          <p>In Business</p>
+        </div>
+        <div class="stat-item">
+          <h3 data-target="40" data-suffix="%">0</h3>
+          <p>Remote Buyers</p>
+        </div>
+        <div class="stat-item">
+          <h3 data-target="150" data-suffix="+">0</h3>
+          <p>Point Inspection</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll to explore</div>
+  </div>
+
+  <!-- ===== INVENTORY ===== -->
+  <section id="inventory">
+    <div class="section-label">Featured Inventory</div>
+    <h2 class="section-title">Current Listings</h2>
+    <p class="section-sub">Every vehicle is hand-selected, mechanically inspected, and reconditioned before it reaches you.</p>
+
+    <div class="inventory-filter">
+      <button class="filter-btn active" data-filter="all">All Vehicles</button>
+      <button class="filter-btn" data-filter="muscle">Muscle Cars</button>
+      <button class="filter-btn" data-filter="jdm">JDM Imports</button>
+      <button class="filter-btn" data-filter="classic">Classic</button>
+    </div>
+
+    <div class="inventory-grid">
+
+      <div class="car-card" data-category="muscle">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&q=80" alt="1969 Ford Mustang Boss 429" loading="lazy" />
+          <span class="car-badge">Available</span>
+        </div>
+        <div class="car-info">
+          <div class="car-year">1969</div>
+          <div class="car-name">Ford Mustang Boss 429</div>
+          <div class="car-specs">
+            <span>429 V8</span>
+            <span>4-Speed Manual</span>
+            <span>38,400 mi</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">$89,500</div>
+            <div class="car-link">View Details →</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" data-category="jdm">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1591134678821-0a70c2c18faf?w=600&q=80" alt="1994 Toyota Supra" loading="lazy" />
+          <span class="car-badge reserved">Reserved</span>
+        </div>
+        <div class="car-info">
+          <div class="car-year">1994</div>
+          <div class="car-name">Toyota Supra RZ</div>
+          <div class="car-specs">
+            <span>2JZ-GTE</span>
+            <span>6-Speed Manual</span>
+            <span>61,000 mi</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">$72,000</div>
+            <div class="car-link">View Details →</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" data-category="classic">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&q=80" alt="1967 Chevrolet Camaro SS" loading="lazy" />
+          <span class="car-badge">Available</span>
+        </div>
+        <div class="car-info">
+          <div class="car-year">1967</div>
+          <div class="car-name">Chevrolet Camaro SS</div>
+          <div class="car-specs">
+            <span>350 V8</span>
+            <span>4-Speed</span>
+            <span>42,100 mi</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">$64,900</div>
+            <div class="car-link">View Details →</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" data-category="jdm">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?w=600&q=80" alt="1999 Nissan Skyline GT-R" loading="lazy" />
+          <span class="car-badge">Available</span>
+        </div>
+        <div class="car-info">
+          <div class="car-year">1999</div>
+          <div class="car-name">Nissan Skyline GT-R V-Spec</div>
+          <div class="car-specs">
+            <span>RB26DETT</span>
+            <span>AWD</span>
+            <span>55,200 mi</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">$96,000</div>
+            <div class="car-link">View Details →</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" data-category="muscle">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&q=80" alt="1970 Dodge Challenger R/T" loading="lazy" />
+          <span class="car-badge">Available</span>
+        </div>
+        <div class="car-info">
+          <div class="car-year">1970</div>
+          <div class="car-name">Dodge Challenger R/T</div>
+          <div class="car-specs">
+            <span>440 Magnum V8</span>
+            <span>3-Speed Auto</span>
+            <span>29,700 mi</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">$79,500</div>
+            <div class="car-link">View Details →</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" data-category="classic">
+        <div class="car-image">
+          <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=600&q=80" alt="1965 Ford Shelby GT350" loading="lazy" />
+          <span class="car-badge sold">Sold</span>
+        </div>
+        <div class="car-info">
+          <div class="car-year">1965</div>
+          <div class="car-name">Shelby GT350</div>
+          <div class="car-specs">
+            <span>289 K-Code V8</span>
+            <span>4-Speed Manual</span>
+            <span>21,000 mi</span>
+          </div>
+          <div class="car-footer">
+            <div class="car-price">$142,000</div>
+            <div class="car-link">View Details →</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="inventory-more">
+      <a href="#contact" class="btn-outline">Request Full Inventory List</a>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section id="why">
+    <div class="section-label">Why Apex Motors</div>
+    <h2 class="section-title">Our Standard<br/>Is Non-Negotiable</h2>
+    <p class="section-sub">We don't list vehicles we wouldn't drive ourselves. Every car goes through our full process before it's offered to you.</p>
+
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">🔍</div>
+        <h3>150-Point Inspection</h3>
+        <p>Every vehicle is evaluated by our ASE-certified technicians across 150 mechanical and cosmetic checkpoints before listing.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🛠️</div>
+        <h3>Full Reconditioning</h3>
+        <p>Our 41,000 sq ft facility handles everything from engine refresh to interior detailing. What you see is what you get — fully ready.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🚚</div>
+        <h3>Nationwide Delivery</h3>
+        <p>40% of our buyers never visit us in person. We ship anywhere in the continental US, fully insured and documented.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">📋</div>
+        <h3>Clean Title, Always</h3>
+        <p>No salvage. No flood. No rebuilt titles. Every vehicle in our inventory comes with a clean title and verified history report.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">💬</div>
+        <h3>Concierge Service</h3>
+        <p>From first inquiry to delivery, you have a dedicated specialist. We answer questions, arrange financing, and handle paperwork.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🔄</div>
+        <h3>Post-Sale Support</h3>
+        <p>Our relationship doesn't end at the sale. We help source rare parts, connect you with specialists, and stand behind every vehicle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials">
+    <div class="section-label">Customer Reviews</div>
+    <h2 class="section-title">What Our Buyers Say</h2>
+    <p class="section-sub">Real feedback from real customers across the country.</p>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"I bought my 1994 Supra completely remotely from Seattle. The video walkthrough, inspection report, and shipping were all handled perfectly. The car arrived exactly as described."</blockquote>
+        <div class="reviewer">
+          <div class="avatar">MR</div>
+          <div>
+            <div class="reviewer-name">Marcus R.</div>
+            <div class="reviewer-loc">Seattle, WA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Bought a '69 Mustang. These guys know their cars. The inspection report was 12 pages long and included photos of every panel gap. This is the right way to buy a classic."</blockquote>
+        <div class="reviewer">
+          <div class="avatar">JT</div>
+          <div>
+            <div class="reviewer-name">James T.</div>
+            <div class="reviewer-loc">Austin, TX</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Third car I've purchased from Apex. The process gets better every time. They sourced a specific color combo I wanted that wasn't even listed. Outstanding team."</blockquote>
+        <div class="reviewer">
+          <div class="avatar">DK</div>
+          <div>
+            <div class="reviewer-name">David K.</div>
+            <div class="reviewer-loc">Miami, FL</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SHIPPING BANNER ===== -->
+  <div class="shipping-banner">
+    <div class="inner">
+      <h2>We Ship <span>Anywhere</span> in the US</h2>
+      <p>Over 40% of our buyers purchase remotely. We provide detailed video walkthroughs, inspection reports, and fully insured enclosed transport to your door.</p>
+      <a href="#contact" class="btn-primary">Get a Shipping Quote</a>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <div id="contact">
+    <div>
+      <div class="section-label">Contact Us</div>
+      <h2 class="section-title">Let's Find<br/>Your Vehicle</h2>
+      <p class="section-sub">Tell us what you're looking for and we'll make it happen.</p>
+
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="John" />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Smith" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="john@example.com" />
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+1 (800) 000-0000" />
+        </div>
+        <div class="form-group">
+          <label>I'm Interested In</label>
+          <select>
+            <option value="">Select a category</option>
+            <option>Classic American Muscle</option>
+            <option>JDM Imports</option>
+            <option>European Classic</option>
+            <option>Specific vehicle (I'll describe below)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us what you're looking for — make, model, year range, condition preferences..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%">Send Inquiry</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>
+          <h4>Showroom</h4>
+          <p>4821 West Broad Street<br/>Richmond, VA 23230</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div>
+          <h4>Phone</h4>
+          <p>1-844-374-8536<br/>Mon–Sat, 9AM–6PM EST</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div>
+          <h4>Email</h4>
+          <p>sales@apexmotorsusa.com</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🕐</div>
+        <div>
+          <h4>Hours</h4>
+          <p>Monday – Saturday: 9AM – 6PM<br/>Sunday: By Appointment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">Apex<span style="color:var(--green)">Motors</span></div>
+        <p>Premium classic and import vehicles. Hand-picked, fully inspected, and ready to drive. Richmond, VA.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Inventory</h4>
+        <ul>
+          <li><a href="#">Muscle Cars</a></li>
+          <li><a href="#">JDM Imports</a></li>
+          <li><a href="#">Classic Cars</a></li>
+          <li><a href="#">European</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Process</a></li>
+          <li><a href="#">Financing</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Apex Motors USA. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
