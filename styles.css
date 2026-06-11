@@ -732,10 +732,119 @@ footer {
   color: #8899aa;
 }
 
+/* ===== DEMO NOTICE ===== */
+.demo-notice {
+  background: #1a1a2e;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  padding: 11px 24px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 72px;
+}
+
+.demo-tag {
+  background: #e6b800;
+  color: #1a1a1a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+.demo-link {
+  color: #7ec8e3;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.demo-link:hover { color: #fff; }
+
+/* ===== FULL PACKAGE ===== */
+.package-section {
+  position: relative;
+  padding: 80px 48px;
+  background: var(--surface);
+}
+
+.package-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface);
+  z-index: -1;
+}
+
+.pkg-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.pkg-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--blue);
+  border-radius: 10px;
+  padding: 28px 22px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.pkg-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+.pkg-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+  line-height: 1;
+}
+
+.pkg-card h3 {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.pkg-card p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.pkg-footer {
+  margin-top: 48px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.pkg-note {
+  font-size: 15px;
+  color: var(--muted);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .inventory-grid { grid-template-columns: repeat(2, 1fr); }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .pkg-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-inner { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -757,6 +866,8 @@ footer {
   .inventory-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
+  .pkg-grid { grid-template-columns: 1fr; }
+  .package-section { padding: 60px 20px; }
   .form-row { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
   footer { padding: 40px 20px 24px; }
