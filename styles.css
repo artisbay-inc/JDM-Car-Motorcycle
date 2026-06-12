@@ -160,12 +160,18 @@ header {
   z-index: 100;
   background: var(--header-bg);
   border-bottom: 1px solid var(--border);
+  height: 72px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 48px;
   height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
 
 header::after {
@@ -1135,7 +1141,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  header { padding: 0 20px; }
+  .header-inner { padding: 0 20px; }
   nav { display: none; }
   nav.open {
     display: flex;
