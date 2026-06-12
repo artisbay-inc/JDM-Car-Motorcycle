@@ -1,3 +1,23 @@
+// Theme switcher
+const THEME_KEY = 'am-theme';
+
+function applyTheme(t) {
+  document.documentElement.classList.add('theme-transitioning');
+  document.documentElement.setAttribute('data-theme', t);
+  localStorage.setItem(THEME_KEY, t);
+  document.querySelectorAll('.theme-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.themeVal === t);
+  });
+  setTimeout(() => document.documentElement.classList.remove('theme-transitioning'), 350);
+}
+
+const savedTheme = localStorage.getItem(THEME_KEY) || 'light';
+applyTheme(savedTheme);
+
+document.querySelectorAll('.theme-btn').forEach(btn => {
+  btn.addEventListener('click', () => applyTheme(btn.dataset.themeVal));
+});
+
 // Mobile nav toggle
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav');

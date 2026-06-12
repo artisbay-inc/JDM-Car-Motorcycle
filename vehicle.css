@@ -103,12 +103,20 @@
 .info-panel {
   position: sticky;
   top: 90px;
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-top: 3px solid var(--blue);
   border-radius: 10px;
   padding: 28px;
   box-shadow: var(--shadow);
+}
+
+/* Dark themes: left border on info panel */
+[data-theme="forest"] .info-panel,
+[data-theme="kk"] .info-panel,
+[data-theme="violet"] .info-panel {
+  border-top: 1px solid var(--border);
+  border-left: 3px solid var(--blue);
 }
 
 .vehicle-year-tag {
@@ -162,7 +170,7 @@
   padding: 11px 13px;
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  background: #fff;
+  background: var(--card);
 }
 
 .qs-item:nth-child(even) { border-right: none; }
@@ -231,7 +239,7 @@
   width: 100%;
   border-collapse: collapse;
   font-size: 14px;
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 8px;
   overflow: hidden;
@@ -266,7 +274,7 @@
 /* Features list */
 .features-list {
   margin-bottom: 28px;
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-left: 3px solid var(--blue);
   border-radius: 6px;
@@ -307,12 +315,20 @@
 
 /* Mini inquiry form */
 .vehicle-inquiry {
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-top: 3px solid var(--blue);
   border-radius: 8px;
   padding: 26px;
   box-shadow: var(--shadow);
+}
+
+/* Dark themes: left border on inquiry */
+[data-theme="forest"] .vehicle-inquiry,
+[data-theme="kk"] .vehicle-inquiry,
+[data-theme="violet"] .vehicle-inquiry {
+  border-top: 1px solid var(--border);
+  border-left: 3px solid var(--blue);
 }
 
 .vehicle-inquiry h3 {

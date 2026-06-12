@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="vehicle.css" />
+  <script>(function(){var t=localStorage.getItem('am-theme')||'light';document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
 <body>
 
@@ -24,6 +25,12 @@
       <a href="index.html#testimonials">Reviews</a>
       <a href="index.html#contact" class="nav-cta">Get in Touch</a>
     </nav>
+    <div class="theme-switcher">
+      <button type="button" class="theme-btn" data-theme-val="light" title="Light / American">☀</button>
+      <button type="button" class="theme-btn" data-theme-val="forest" title="Forest Green">🌿</button>
+      <button type="button" class="theme-btn" data-theme-val="kk" title="KK Red">🔴</button>
+      <button type="button" class="theme-btn" data-theme-val="violet" title="Midnight Violet">💜</button>
+    </div>
     <button type="button" class="menu-toggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
